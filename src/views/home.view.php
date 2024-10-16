@@ -10,8 +10,7 @@
 
     <div>
         <h1>Bienvenido</h1>
-        
-        <a href="profes">
+        <a href="profesores">
             <button>Comencemos</button>
         </a>
     </div>

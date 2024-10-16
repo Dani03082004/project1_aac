@@ -1,5 +1,4 @@
 <?php
-
     function router(array $routes):string {
         $url=parse_url($_SERVER['REQUEST_URI'])['path'];
         $path=explode('/',$url);

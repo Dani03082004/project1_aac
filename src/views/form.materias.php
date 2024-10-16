@@ -1,32 +1,29 @@
 <?php include 'partials/header.view.php'; ?>
 
 <main class="py-4">
-    <div class="m-2  py-4 bg-gray-300 w-2/3 mx-auto">
-        <h2 class="text-2xl underline">Formulario Materias</h2>
-        <form class="m-2 grid grid-cols-2 gap-2 justify-center" action="add-book" method="POST">
+    <div class="m-2 py-4 bg-gray-100 shadow-md rounded-lg w-2/3 mx-auto">
+        <h2 class="text-2xl font-semibold text-gray-800 underline mb-4">Formulario Materias</h2>
+        <form class="m-2 grid grid-cols-1 md:grid-cols-2 gap-4" action="materias" method="POST">
             <div>
-                <label class="px-2" for="nombre">Nombre</label>
+                <label class="block mb-1 text-sm font-medium text-gray-700" for="nombre_materia">Nombre</label>
+                <input class="block w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" name="nombre_materia" placeholder="Nombre" required>
             </div>
+            <br>
             <div>
-                <input class="px-2 text-sm" type="text" name="nombre" placeholder="nombre">
+                <label class="block mb-1 text-sm font-medium text-gray-700" for="curso_materia">Curso</label>
+                <input class="block w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" name="curso_materia" placeholder="Apellido" required>
             </div>
+            <br>
             <div>
-                <label class="px-2" for="curso">Curso Materia</label>
+                <label class="block mb-1 text-sm font-medium text-gray-700" for="duracion_materia">Duración</label>
+                <input class="block w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="number" name="duracion_materia" placeholder="Edad" required>
             </div>
-            <div>   
-            <input class="px-2 text-sm" type="text" name="curso" placeholder="curso">
+            <div class="flex justify-between items-center mt-4 md:col-span-2">
+                <button type="button" onclick="addField('materias')" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400">Añadir más materias</button>
+                <button type="submit" class="ml-4 inline-flex items-center px-4 py-2 bg-green-600 text-white font-semibold rounded-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-400">Siguiente</button>
             </div>
-            <div>
-                <label class="px-2" for="duracion">Duración a la semana</label>
-            </div>
-            <div>   
-            <input class="px-2 text-sm" type="text" name="duracion" placeholder="duracion">
-            </div>
-            <div class="col-span-2 mx-auto">
-                <button class="bg-red-600 text-white px-3 py-1 rounded" type="submit">Add</button>
-            </div>
-    </form>
+        </form>
     </div>
-    
 </main>
+
 <?php include 'partials/footer.view.php'; ?>

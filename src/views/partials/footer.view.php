@@ -1,9 +1,7 @@
 <footer class="bg-red-600 text-white">
-    <ul class="px-3 py-4 flex flex-row justify-between">
-        <li class="text-xs underline px-4"><a href="home">Home</a></li>
-        <li class="text-xs underline px-4"><a href="add">Add</a></li>
-        <li class="text-xs underline px-4"><a href="admin">Admin</a></li>
-    </ul>
+    <div class="px-3 py-4 flex justify-center">
+        <p class="text-xs">© 2024 Activitat Formularis. Tots els drets reservats.</p>
+    </div>
 </footer>
 </body>
 </html>

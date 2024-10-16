@@ -1,3 +1,4 @@
 <?php
 
-    require VIEWS.'form.profesores.php';
+    
+    require VIEWS.'/../views/form.profesores.php';
